@@ -10,6 +10,7 @@ class AdminPanelView extends CoreView
 {
     public function dashboard($article_count, $category_count)
     {
-        echo  $this->twig->render('/admin/dashboard.twig', ['article_count'=>$article_count, 'category_count' => $category_count]);
+//        echo  $this->twig->render('/admin/dashboard.twig', ['article_count'=>$article_count, 'category_count' => $category_count]);
+        echo  $this->twig->render('/back/layout.twig', ['article_count'=>$article_count, 'category_count' => $category_count]);
     }
 }
